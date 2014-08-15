@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org" ng-app="RootModule">
+<head>
+    <title>iWeb New</title>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"> </script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular-route.js"> </script>
+	<script src="js/main.js"> </script>
+</head>
+<body>
+
+<div ng-controller="ExampleController">
+
+  <div class="slide-animate-container">
+    <div class="slide-animate" ng-include="header"></div>
+  </div>
+  
+  <div class="view-animate-container">
+    <ng-view></ng-view>
+  </div>
+  
+    <div class="slide-animate-container">
+    <div class="slide-animate" ng-include="footer"></div>
+  </div>
+  
+</div>
+</hr>
+
+
+</body>
+</html>
